@@ -1,0 +1,17 @@
+C:\Users\Andre\Documents\Git\EasySocket\ProxyGzip\ProxyGzip\bin\Debug\ProxyGzip.exe
+C:\Users\Andre\Documents\Git\EasySocket\ProxyGzip\ProxyGzip\bin\Debug\ProxyGzip.pdb
+C:\Users\Andre\Documents\Git\EasySocket\ProxyGzip\ProxyGzip\obj\x86\Debug\ProxyGzip.exe
+C:\Users\Andre\Documents\Git\EasySocket\ProxyGzip\ProxyGzip\obj\x86\Debug\ProxyGzip.pdb
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\obj\x86\Debug\ProxyGzip.exe
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\obj\x86\Debug\ProxyGzip.pdb
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\ProxyGzip.exe
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\ProxyGzip.pdb
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\obj\x86\Debug\ProxyGzip.csprojResolveAssemblyReference.cache
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\EasySocket.dll
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\EasySocket.pdb
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\log4net.dll
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\log4net.xml
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\log.xml
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\SharpConfig.dll
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\SharpConfig.xml
+C:\Users\Andre\Documents\Visual Studio 2010\Projects\ProxyGzip\ProxyGzip\bin\Debug\ProxyGZip.ini
