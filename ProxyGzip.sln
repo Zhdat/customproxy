@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyGzip", "ProxyGzip\Prox
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyGzipStarter", "ProxyGzipStarter\ProxyGzipStarter.csproj", "{08743005-62B6-4F93-898D-71A3264E8820}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasySocket", "..\EasySocket\EasySocket\EasySocket\EasySocket.csproj", "{721D5AF5-1BD6-4E02-AFCA-A03297932646}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,17 @@ Global
 		{08743005-62B6-4F93-898D-71A3264E8820}.Release|Mixed Platforms.Build.0 = Release|x86
 		{08743005-62B6-4F93-898D-71A3264E8820}.Release|x86.ActiveCfg = Release|x86
 		{08743005-62B6-4F93-898D-71A3264E8820}.Release|x86.Build.0 = Release|x86
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Debug|x86.Build.0 = Debug|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{721D5AF5-1BD6-4E02-AFCA-A03297932646}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

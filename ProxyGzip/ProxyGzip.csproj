@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EasySocket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasySocket.1.3.1\lib\net40\EasySocket.dll</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-client\log4net.dll</HintPath>
     </Reference>
@@ -54,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\ConnectionInfo.cs" />
+    <Compile Include="Config\GeneralInfo.cs" />
     <Compile Include="Config\ProxyConfig.cs" />
     <Compile Include="Config\Snifferinfo.cs" />
     <Compile Include="Program.cs" />
@@ -73,6 +71,12 @@
     <Content Include="log.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EasySocket\EasySocket\EasySocket\EasySocket.csproj">
+      <Project>{721D5AF5-1BD6-4E02-AFCA-A03297932646}</Project>
+      <Name>EasySocket</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

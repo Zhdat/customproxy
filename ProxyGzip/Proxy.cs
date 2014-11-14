@@ -13,7 +13,6 @@ namespace ProxyGzip
         private int sourcePort;
         private string targetAddr;
         private int targetPort;
-        private GZipFilter gzipFilter;
         private bool running;
 
         public Proxy()
@@ -29,8 +28,6 @@ namespace ProxyGzip
             this.sourcePort = sourcePort;
             this.targetAddr = targetAddr;
             this.targetPort = targetPort;
-            this.gzipFilter = new GZipFilter();
-
         }
         /// <summary>
         /// Run the proxy synchronously
