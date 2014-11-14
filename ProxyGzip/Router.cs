@@ -53,6 +53,7 @@ namespace ProxyGzip
                 else
                 {
                     proxy = new Proxy<SimpleWrapper, SimpleWrapper>(outAddr, targetSocket);
+                    log.Info("The header cannot operate with filters in No-Header mode");
                 }
                 proxy.SourceWrapper.OnReceived += SourceWrapper_OnReceived;
                 proxy.TargetWrapper.OnReceived += TargetWrapper_OnReceived;
