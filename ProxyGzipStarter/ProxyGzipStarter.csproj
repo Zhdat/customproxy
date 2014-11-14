@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ADD3E28D-11DF-458D-8A80-F5A2E28503F2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{08743005-62B6-4F93-898D-71A3264E8820}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProxyGzip</RootNamespace>
-    <AssemblyName>ProxyGzip</AssemblyName>
+    <RootNamespace>ProxyGzipStarter</RootNamespace>
+    <AssemblyName>ProxyGzipStarter</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -35,44 +35,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EasySocket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EasySocket.1.3.1\lib\net40\EasySocket.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.2.0.3\lib\net40-client\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpConfig">
-      <HintPath>..\packages\sharpconfig.1.4\lib\net40\SharpConfig.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config\ConnectionInfo.cs" />
-    <Compile Include="Config\ProxyConfig.cs" />
-    <Compile Include="Config\Snifferinfo.cs" />
+    <Compile Include="ProxyGzipService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProxyGzipService.Designer.cs">
+      <DependentUpon>ProxyGzipService.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Router.cs" />
-    <Compile Include="Proxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sniffer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
-    <Content Include="ProxyGZip.ini">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="log.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <ProjectReference Include="..\ProxyGzip\ProxyGzip.csproj">
+      <Project>{ADD3E28D-11DF-458D-8A80-F5A2E28503F2}</Project>
+      <Name>ProxyGzip</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

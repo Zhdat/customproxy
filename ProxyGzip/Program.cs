@@ -14,7 +14,7 @@ namespace ProxyGzip
 		{
 			XmlConfigurator.ConfigureAndWatch(new FileInfo("./log.xml"));
 
-			Proxy proxy = new Proxy(ProxyConfig.Source.Port, ProxyConfig.Target.Address, ProxyConfig.Target.Port);
+			Proxy proxy = new Proxy();
 			proxy.Run();
 		}
 	}

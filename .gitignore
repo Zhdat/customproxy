@@ -1,3 +1,6 @@
 **/*.dll
 packages/*/
 **/bin
+ProxyGzipStarter/obj/
+ProxyGzip/obj/x86/Debug/ProxyGzip.csproj.FileListAbsolute.txt
+ProxyGzip/obj/
