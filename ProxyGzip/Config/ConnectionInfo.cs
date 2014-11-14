@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ProxyGzip.Config
 {
-	internal class ConnectionInfo
+	public class ConnectionInfo
 	{
 		public string Address { get; set; }
 		public int Port { get; set; }

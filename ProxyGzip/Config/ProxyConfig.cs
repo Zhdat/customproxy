@@ -13,7 +13,7 @@ namespace ProxyGzip.Config
         readonly static string FILE;
         static ProxyConfig()
         {
-            FILE = Path.Combine(Assembly.GetEntryAssembly().Location, "..", "ProxyGzip.ini");
+            FILE = Path.Combine(Assembly.GetEntryAssembly().Location, "..", "ProxyGZip.ini");
             Reload();
         }
         public static void Reload()
@@ -26,6 +26,7 @@ namespace ProxyGzip.Config
                 Sniffer = config["Sniffer"].CreateObject<SnifferInfo>();
                 General = config["General"].CreateObject<GeneralInfo>();
             }
+            catch { }
             finally { }
         }
         public static ConnectionInfo Source { get; private set; }
