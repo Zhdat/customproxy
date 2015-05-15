@@ -2,14 +2,14 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ADD3E28D-11DF-458D-8A80-F5A2E28503F2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{BF37FC19-D439-425A-9AAC-D2B267735485}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProxyGzip</RootNamespace>
-    <AssemblyName>ProxyGzip</AssemblyName>
+    <RootNamespace>Streams</RootNamespace>
+    <AssemblyName>Streams</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -34,13 +34,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.2.0.3\lib\net40-client\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpConfig">
-      <HintPath>..\packages\sharpconfig.1.4\lib\net40\SharpConfig.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,33 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config\ConnectionInfo.cs" />
-    <Compile Include="Config\GeneralInfo.cs" />
-    <Compile Include="Config\ProxyConfig.cs" />
-    <Compile Include="Config\Snifferinfo.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Router.cs" />
-    <Compile Include="Proxy.cs" />
+    <Compile Include="Buffer.cs" />
+    <Compile Include="HeaderedStream.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sniffer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-    <Content Include="ProxyGZip.ini">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="log.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\EasySocket\EasySocket\EasySocket\EasySocket.csproj">
-      <Project>{721D5AF5-1BD6-4E02-AFCA-A03297932646}</Project>
-      <Name>EasySocket</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

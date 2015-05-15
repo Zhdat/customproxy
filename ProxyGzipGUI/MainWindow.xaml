@@ -1,0 +1,23 @@
+﻿<Window x:Class="ProxyGzipGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        Title="ProxyGzip GUI" Height="404" Width="480"
+        Background="{DynamicResource BackgroundBrush}" Loaded="Window_Loaded">
+    <Window.Resources>
+        <ResourceDictionary Source="Resources/Dictionary.xaml"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <DockPanel>
+            <TextBlock Foreground="{DynamicResource InputBrush}" DockPanel.Dock="Top" FontWeight="SemiBold" Text="Endpoint 1" Margin="8,4" Name="txtInputTitle" />
+            <RichTextBox IsReadOnly="True" BorderThickness="4,1,0,0" Background="{x:Null}" FontFamily="{DynamicResource DataFont}" BorderBrush="{DynamicResource InputBrush}" Name="txtContentInput" />
+        </DockPanel>
+        <DockPanel Grid.Column="1">
+            <TextBlock Foreground="{DynamicResource OutputBrush}" DockPanel.Dock="Top" FontWeight="SemiBold" Text="Endpoint, 2" Margin="8,4" Name="txtOutputTitle" />
+            <RichTextBox IsReadOnly="True" BorderThickness="4,1,0,0" Background="{x:Null}" FontFamily="{DynamicResource DataFont}" BorderBrush="{DynamicResource OutputBrush}" Name="txtContentOutput" />
+        </DockPanel>
+    </Grid>
+</Window>
